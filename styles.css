@@ -1,0 +1,19 @@
+table{
+    width: 40%;
+    border: 4px solid gray;
+}
+tr{
+    border-bottom: 4px solid gray;
+}
+
+#form{
+    padding: 16px;
+}
+#form h2{
+    display: inline-block;
+    border-bottom: 4px solid gray;
+    padding-right: 128px;
+}
+input{
+    margin: 4px;
+}

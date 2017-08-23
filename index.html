@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+
+                $("#submit").click(function(e){
+                    e.preventDefault();
+                    var firstName = $("#first-name").val();
+                    var lastName = $("#last-name").val();
+                    var email = $("#email").val();
+                    var phoneNumber = $("#phone-number").val();
+
+                    $("tbody").append("<tr><td>" + firstName + "</td><td>" + lastName + "</td><td>" + email + "</td><td>" + phoneNumber + "</td></tr>");
+                })
+
+            });
+        </script>
+        <title>Users</title>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <div id="form">
+            <h2>Add User</h2>
+            <form>
+                First Name:<input id="first-name" type="text"><br>
+                Last Name:<input id="first-name" type="text"><br>
+                Email:<input id="email" type="email"><br>
+                Phone Number:<input id="phone-number" type="tel"><br>
+                <button id="submit">Submit</button>
+                <!-- <input id="submit" type="submit"> -->
+            </form>
+        </div>
+    </body>
+</html>
